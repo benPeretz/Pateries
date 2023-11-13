@@ -1,0 +1,310 @@
+body {
+    text-align: center;
+}
+
+#sectionTop {
+    margin-bottom: 6rem;
+}
+
+
+h1 {
+    font-family: 'Croissant One', cursive;
+    font-size: 4.5rem;
+
+    letter-spacing: 0.8rem;
+    background: linear-gradient(rgb(243 143 143 / 90%), #272323);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+}
+
+#mainNav {
+    min-height: 3.5rem;
+    background-color: #fff;
+}
+
+#mainNav .navbar-toggler {
+    font-size: 80%;
+    padding: 0.75rem;
+    color: #64a19d;
+    border: 1px solid #64a19d;
+}
+
+#mainNav .navbar-toggler:focus {
+    outline: none;
+}
+
+#mainNav .navbar-brand {
+    color: #000;
+    font-weight: 700;
+    padding: 0.9rem 0;
+}
+
+#mainNav .navbar-nav .nav-item:hover {
+    color: fade(#fff, 80%);
+    outline: none;
+    background-color: transparent;
+}
+
+#mainNav .navbar-nav .nav-item:active,
+#mainNav .navbar-nav .nav-item:focus {
+    outline: none;
+    background-color: transparent;
+}
+
+@media (min-width: 992px) {
+
+    #mainNav {
+        padding-top: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+        background-color: transparent;
+        transition: background-color 0.3s ease-in-out;
+      }
+
+    #mainNav.navbar-shrink {
+        background-color: #fff;
+      }
+}
+
+
+
+.masthead {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 35rem;
+    padding: 15rem 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("./images/pexels-photo-4792401.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+.masthead h1 {
+    font-family: 'Croissant One', cursive;
+    font-size: 4.5rem;
+
+    letter-spacing: 0.8rem;
+    background: linear-gradient(rgba(277, 129, 129, 0.9), #ebadb3);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+.masthead h2 {
+
+    font-family: 'Dancing Script', cursive;
+    font-size: 5rem;
+
+}
+
+.btn-outline-danger {
+    --bs-btn-color: #ebadb3;
+    --bs-btn-border-color: #ebadb3;
+    --bs-btn-hover-bg: #9d7b7f;
+}
+
+
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    background-color: #cd5b66;
+}
+
+.card {
+    border: none;
+}
+
+hr {
+    border-top: dotted 15px;
+    width: 15%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #FFBFBF;
+    opacity: 1;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+
+
+body {
+    overflow-x: hidden;
+    font-family: Sans-Serif;
+    margin: 0;
+  }
+  
+  .menu-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #eae9e9;
+    color: #512323;
+    padding: 20px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+    box-sizing: border-box;
+    
+  }
+  
+  .menu-logo {
+    line-height: 0;
+    margin: 0 20px;
+  }
+  
+  .menu-logo img {
+    max-height: 40px;
+    max-width: 100px;
+    flex-shrink: 0;
+  }
+  
+  .menu-container a {
+    text-decoration: none;
+    color: #eae9e9;
+    transition: color 0.3s ease;
+  }
+  
+  .menu-container a:hover {
+    color: #c345e8;
+  }
+  
+  .menu-container input {
+    display: block;
+    width: 35px;
+    height: 25px;
+    margin: 0;
+    position: absolute;
+    cursor: pointer;
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+  }
+  
+  /* Burger menu */
+  .menu-container span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #512323;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+  
+  .menu-container span:first-child {
+    transform-origin: 0% 0%;
+  }
+  
+  .menu-container span:nth-child(3) {
+    transform-origin: 0% 100%;
+  }
+  
+  .menu-container input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(3px,-1px);
+    background: #eae9e9;
+  }
+  
+  .menu-container input:checked ~ span:nth-child(4) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  
+  .menu-container input:checked ~ span:nth-child(3) {
+    transform: rotate(-45deg) translate(-5px,11px);
+  }
+  
+  .menu ul {
+    list-style: none;
+  }
+  
+  .menu li {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+  
+  /* mobile styles */
+  @media only screen and (max-width: 767px) { 
+    .menu-container {
+      flex-direction: column;
+      align-items: flex-end;
+    }
+    
+    .menu-logo {
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  
+    .menu-logo img {
+      max-height: 30px;
+    }
+  
+    .menu {
+      position: absolute;
+      box-sizing: border-box;
+      width: 300px;
+      right: -300px;
+      top: 0;
+      margin: -20px;
+      padding: 75px 50px 50px;
+      background: #512323;
+      -webkit-font-smoothing: antialiased;
+      /* to stop flickering of text in safari */
+      transform-origin: 0% 0%;
+      transform: translateX(0%);
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+  
+    .menu-container input:checked ~ .menu {
+      transform: translateX(-100%);
+    }
+  }
+  
+  /* desktop styles */
+  @media only screen and (min-width: 768px) { 
+    .menu-container {
+      width: 100%;
+    }
+  
+    .menu-container a {
+      color: #512323;
+    }
+  
+    .menu-container input {
+      display: none;
+    }
+  
+    /* Burger menu */
+    .menu-container span {
+      display: none;
+    }
+  
+    .menu {
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    .menu ul {
+      display: flex;
+      padding: 0;
+    }
+  
+    .menu li {
+      padding: 0 20px;
+    }
+  }
